@@ -17,6 +17,16 @@ describe("Test that sum of primes is computed properly", function() {
       lib.sumOfPrimes("invalidValue")== -1
       );
   });
+  it("Entering not a number should return -1", function() {
+    assert(
+      lib.sumOfPrimes([1,2,3])== -1
+      );
+  });
+  it("Entering not a number should return -1", function() {
+    assert(
+      lib.sumOfPrimes({"item":3})== -1
+      );
+  });
   it("Entering 10 should return 15", function() {
     assert(
       lib.sumOfPrimes(10)== 15
